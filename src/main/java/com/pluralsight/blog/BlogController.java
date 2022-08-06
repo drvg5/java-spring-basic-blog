@@ -12,8 +12,7 @@ import java.util.List;
 @Controller
 public class BlogController {
 
-    @Autowired
-    PostRepository postRepository;
+    private PostRepository postRepository;
 
     @RequestMapping("/")
     public String listPosts(ModelMap modelMap){
